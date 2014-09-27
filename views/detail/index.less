@@ -1,53 +1,18 @@
-#edit {
-    padding: 88px 0 0 0;
+#detail {
+    .header-space;
+}
 
-    a.add {
-        display: block;
-        width: 95%;
-        height: 44px;
+#detail ul {
+    margin: 0 0 @header-height 0; //Bottom margin as much as bottom tabbar.
+    padding: 0;
+}
 
-        margin: 15px 2.5% 20px 2.5%;
-        border: 1px dashed @highlight;
-        background-color: transparent;
+#detail lh {
+    display: block;
+    padding: 10px;
 
-        color: @highlight;
-        font-size: 2em;
-        text-align: center;
-        text-decoration: none;
-    }
-
-    #blocks {
-        width: 100%;
-        transform: scale(0.95, 0.95);
-        transform-origin: 50% top;
-
-        div, a {
-            display: block;
-            border: 1px dashed @highlight;
-            margin-bottom: 15px;
-            text-decoration: none;
-
-            img {
-                margin-bottom: -4px;
-            }
-        }
-    }
-    #name-input {
-        position: absolute;
-        left: 0;
-        top: 44px;
-        z-index: 1;
-        height: 45px;
-
-        color: @highlight;
-        text-align: center;
-        font-size: 16pt;
-        font-weight: 400;
-        font-style: italic;
-        margin: 0;
-        &:focus {
-            border: 1px dashed @turquoise;
-            outline: none;
-        }
-    }
+    color: @darkGrey;
+    font-weight: 600;
+    font-size: 0.8em;
+    border-bottom: 1px solid @lightGrey;
 }
